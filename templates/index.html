@@ -2,14 +2,12 @@
 
 {% block contenido %}
 
-<!-- 🔹 Portada centrada -->
 <div class="portada text-center">
     <h1>Clínica Veterinaria 🐶</h1>
     <p>Gestiona fácilmente las citas médicas de tus mascotas</p>
     <a href="/agregar" class="btn btn-light mt-3">Agendar Nueva Cita</a>
 </div>
 
-<!-- 🔹 Citas -->
 <div class="container mt-5">
     <div class="row">
     {% for c in citas %}

@@ -64,7 +64,7 @@ def editar(id):
 
     return render_template('editar.html', cita=cita)
 
-# 🔸 Eliminar cita
+#  Eliminar cita
 @app.route('/eliminar/<int:id>')
 def eliminar(id):
     conn = conectar()

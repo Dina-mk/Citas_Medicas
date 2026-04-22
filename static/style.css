@@ -1,34 +1,29 @@
-/* 🔹 Fondo general */
+
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #667eea, #9e74c8);
     min-height: 100vh;
     margin: 0;
 }
 
-/* 🔹 Contenedor principal */
 .contenido {
     padding: 20px;
 }
 
-/* 🔹 Portada centrada */
 .portada {
     color: white;
     text-align: center;
     margin-top: 100px;
 }
 
-/* 🔹 Tarjetas */
 .card {
     border-radius: 15px;
     transition: transform 0.2s;
 }
 
-/* 🔹 Animación */
 .card:hover {
     transform: scale(1.03);
 }
 
-/* 🔹 Botones */
 .btn {
     border-radius: 10px;
 }
