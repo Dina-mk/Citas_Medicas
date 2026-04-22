@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<form method="POST">
+    <input name="mascota" placeholder="Mascota" class="form-control mb-2">
+    <input name="propietario" placeholder="Propietario" class="form-control mb-2">
+    <input name="especie" placeholder="Especie" class="form-control mb-2">
+    <input name="fecha" type="date" class="form-control mb-2">
+
+    <button class="btn btn-success">Guardar</button>
+</form>
+
+{% endblock %}

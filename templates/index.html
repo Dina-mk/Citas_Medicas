@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<!-- 🔹 Portada centrada -->
+<div class="portada text-center">
+    <h1>Clínica Veterinaria 🐶</h1>
+    <p>Gestiona fácilmente las citas médicas de tus mascotas</p>
+    <a href="/agregar" class="btn btn-light mt-3">Agendar Nueva Cita</a>
+</div>
+
+<!-- 🔹 Citas -->
+<div class="container mt-5">
+    <div class="row">
+    {% for c in citas %}
+        <div class="col-md-4">
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">🐾 {{ c[1] }}</h5>
+
+                    <p class="card-text">
+                        <strong>Propietario:</strong> {{ c[2] }} <br>
+                        <strong>Especie:</strong> {{ c[3] }} <br>
+                        <strong>Fecha:</strong> {{ c[4] }}
+                    </p>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="/editar/{{ c[0] }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="/eliminar/{{ c[0] }}" class="btn btn-danger btn-sm">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

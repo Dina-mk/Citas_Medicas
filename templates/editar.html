@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<form method="POST">
+    <input name="mascota" value="{{ cita[1] }}" class="form-control mb-2">
+    <input name="propietario" value="{{ cita[2] }}" class="form-control mb-2">
+    <input name="especie" value="{{ cita[3] }}" class="form-control mb-2">
+    <input name="fecha" value="{{ cita[4] }}" type="date" class="form-control mb-2">
+
+    <button class="btn btn-warning">Actualizar</button>
+</form>
+
+{% endblock %}
